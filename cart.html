@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miss Ousada E-commerce Website</title>
+    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <section id="header"><a href="#"><img src="./img/logo black.png" alt="logo"></a>
+        <div role="navigation" aria-label="Main">
+            <!-- list of links to main website-->
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="active" id="lg-bag"><a href="cart.html"><img src="./img/shopping-bag-solid nurosado.png" alt=""></a></li>
+                <a href="#" id="close"><i class="far fa-times"></i></a>
+            </ul>
+        </div>
+        <div id="mobile">
+            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+            <i id="bar" class="fas fa-outdent"></i>
+        </div>
+    </section>
+
+    <section id="page-header" class="about-header">
+        <h2>Carrinho de Compras</h2>
+        <p>Adicione seu cupom de desconto e economize nas compras</p>
+    </section>
+
+    <section id="cart" class="section p-1">
+        <table width="100%">
+            <thead>
+            <tr>
+                <td>Remover</td>
+                <td>Imagem</td>
+                <td>Produto</td>
+                <td>Preco</td>
+                <td>Quantidade</td>
+                <td>Total</td>
+            </tr>
+            </thead>
+        <tbody>
+            <tr>
+            <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+            <td><img src="./img/Conjunto Balada.jpg" alt=""></td>
+            <td>Conjunto Balada</td>
+            <td>R$120.00</td>
+            <td><input type="number" value="1"></td>
+            <td>R$120.00</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                <td><img src="./img/Vestido Escultura Branco.jpg" alt=""></td>
+                <td>Vestido Escultura Branco</td>
+                <td>R$130.00</td>
+                <td><input type="number" value="1"></td>
+                <td>R$130.00</td>
+            </tr>
+            <tr>
+                <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                <td><img src="./img/BiquiniMarisol.jpg" alt=""></td>
+                <td>Biquini Marisol</td>
+                <td>R$65.00</td>
+                <td><input type="number" value="1"></td>
+                <td>R$65.00</td>
+            </tr>
+        </tbody>
+        </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Validar Cupom</h3>
+            <div><input type="text" placeholder="Digite Seu Cupom ">
+                <button class="normal">Validar</button>
+            </div>
+        </div>
+        <div id="subtotal">
+            <h3>Valor Total da Compra</h3>
+            <table>
+                <tr>
+                    <td>Subtotal da Compra</td>
+                    <td>R$315.00</td>
+                </tr>
+                <tr>
+                    <td>Entrega</td>
+                    <td>Free</td>
+                </tr>
+                <tr>
+                    <td><strong>Valor Total a Pagar</strong></td>
+                    <td><strong>R$315.00</strong></td>
+                </tr>
+            </table>
+            <button class="normal">Pagar</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col"><img class="logo" src="./img/logo1.jpg" alt="">
+            <h4>Contato</h4>
+            <p><strong>Endereço:</strong> Avenida Santos Dumont, 70, Terra Vermelha, Vila Velha, ES.</p>
+            <p><strong>Telefone:</strong> 27 99629-2217</p>
+            <p><strong>Horário de Funcionamento:</strong> Seg - Sáb 09:00 as 17:30</p>
+            <div class="follow">
+                <h4>Siga-nos</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fab fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>Sobre</h4>
+            <a href="#">Sobre Miss Ousada</a>
+            <a href="#">Informações sobre Entrega</a>
+            <a href="#">Política de Privacidade</a>
+            <a href="#">Termos & Condições</a><a href="#">Entre em Contato</a>
+        </div>
+        <div class="col">
+            <h4>Minha Conta</h4>
+            <a href="#">Entrar na Minha Conta</a>
+            <a href="#">Visualizar Meu carrinho</a>
+            <a href="#">Lista de Desejos</a>
+            <a href="#">Rastrear Meu Pedido</a>
+            <a href="#">Ajuda</a>
+        </div>
+        <div class="col install">
+            <h4>Installar App da Miss Ousada</h4>
+            <p>Baixar App da Apple Store ou Google Play</p>
+            <div class="row"><img src="./img/app.jpg" alt=""> <img src="./img/play.jpg" alt=""></div>
+            <p>Formas de Pagamento</p><img src="./img/cartoes.png" alt="">
+        </div>
+        </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2023, Miss Ousada - Todos os Direitos Reservados.</p>
+        </div>
+
+    </footer>
+
+    <script src="./script.js"></script>
+
+
+
+    <!--  onclick="window.location.href='sproduct.html';">  this part was added inside <div class="pro" onclick="window.location.href='sproduct.html';"> to enable the first item to be clicked and taking the user from the multiple items shop page to the specified item page, detailing it what it is, and other related information. It is important to note that if we want to do it with every single product, we will have to add this process to each product in particular. Always remember that this is a dependent step, it means that we need the page sproduct.html built to be added, otherwise, the link (that is triggered by the user clicking in the product itself, in the shop page) will go nowhere, because the page we are saying to the link  to follow when it is clicked does not exist. -->
+</body>
+
+</html>
